@@ -357,23 +357,23 @@ video {
   text-shadow: 1px 1px 2px black;
 }
 
-.close-hidden-window-button {
+.center-hidden-window-button {
   position: absolute;
   box-sizing: border-box;
   float: right;
   width: 22px;
   height: 22px;
   top: 7px;
-  left: calc(100% - 29px);
+  left: calc(100% - 29px - 22px);
   color: rgb(233, 233, 233);
   text-shadow: 0 0 3px white;
   background-color: rgb(60, 60, 60);
   transition: 0.4s;
 }
 
-.close-hidden-window-button:hover {
-  color: red;
-  text-shadow: 0 0 4px red;
+.center-hidden-window-button:hover {
+  color: cyan;
+  text-shadow: 0 0 4px cyan;
   background-color: rgb(43, 43, 43);
   border-color: rgb(43, 43, 43);
 }

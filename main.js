@@ -65,18 +65,20 @@ for(let i = 0; i < hiedWindowButtons.length; i++){
 }
 
 function ToggleHiddenWindow(event){
+    //<i class="fa-regular fa-window-minimize fa-xs"></i>
+    //<i class="fa-regular fa-window-maximize fa-xs"></i>
     let target = event.target;
     if(!target.parentElement.classList.contains("minimize-hidden-window")){
         target.parentElement.classList.add("minimize-hidden-window");
 
-        target.children[0].classList.add("fa-light", "fa-square");
-        target.children[0].classList.remove("fa-regular", "fa-window-restore", "fa-xs");
+        target.children[0].classList.add("fa-window-maximize");
+        target.children[0].classList.remove("fa-window-minimize");
     }
     else{
         target.parentElement.classList.remove("minimize-hidden-window");
         
-        target.children[0].classList.remove("fa-light", "fa-square");
-        target.children[0].classList.add("fa-regular", "fa-window-restore", "fa-xs");
+        target.children[0].classList.remove("fa-window-maximize");
+        target.children[0].classList.add("fa-window-minimize");
     }
 }
 
