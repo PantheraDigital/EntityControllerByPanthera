@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+    <head>
+        <title>Unity Entity Controller Pack</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Panthera">
+        <meta name="description" content="Discover the code pack that will help you create your 2D game faster."><!--description used in search result of page-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--describes how the layout and content adapts to the mobile viewport-->
+        <meta name="application-name" content="Unity Entity Controller Pack"><!--name used for the "Add to Home Screen" function in their web browser -->
+        <meta name="keywords" content=""><!--keywords for search engines-->
+        
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Unity Entity Controller Pack">
+        <meta property="og:description" content="Discover the code pack that will help you create your 2D game faster.">
+        <meta property="og:image" content="https://pantheradigital.github.io/ProjectPics/PageScreenshot.png">
+        <meta property="og:image:alt" content="An image preview of the website depicting the name Panthera above three buttons labled about, projects, and links. Next to this is a circle with pink at the top gradually becoming blue before the bottom allong with the image of four scratch marks over the circle.">
+        <meta property="og:url" content="https://pantheradigital.github.io/">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Unity Entity Controller Pack">
+        <meta name="twitter:description" content="Discover the code pack that will help you create your 2D game faster.">
+        <meta name="twitter:image" content="https://pantheradigital.github.io/ProjectPics/PageScreenshot.png">
+        <meta name="twitter:creator" content="@Poisonx_3">
+
+        <link rel="stylesheet" href="Styles/style.css" />
+        <link rel="stylesheet" href="Logo/style.css" />
+
+        <script src="https://kit.fontawesome.com/879ec05024.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+
+    <section id="landing">
+        <header id="page-header" class="inset-box">
+            <span class="header-flex-container">
+                <div id="title-box">
+                    <h1 id="title-tag-text">Panthera's</h1>
+                    <h1 class="verdana-font">Entity Controller 2D<br>for Unity</h1>
+                </div>
+    
+                <div id="logo">
+                    <img src="Logo/LogoImg.png" alt="logo" class="logo-img logo-img-shadow">
+                    
+                    <span class="logo-shape-wrapper">
+                        <div class="logo-shape-animation logo-shape"></div>    
+                    </span>
+                </div>
+            </span>
+            
+            <div class="header-buttongroup">
+                <a class="scroll-to-section button-color-blue" href="https://assetstore.unity.com/packages/tools/game-toolkits/entitycontroller2d-234231" target="_blank">Get Now</a>
+                <a class="scroll-to-section" href="#about">About</a>
+                <a class="scroll-to-section" href="#technical">Technical</a>
+                <a class="scroll-to-section" href="https://pantheraonline.itch.io/entity-controller-demo" target="_blank">Demo</a>
+                <a class="scroll-to-section button-color-purple" href="https://pantheradigital.github.io/" target="_blank">Panthera</a>
+            </div>
+            
+        </header>
+        
+        <p id="landing-tagline" class="center-text verdana-font"><b>This pack gives you the tools to create your 2D entities much faster, AI or Player controlled.</b></p>
+
+        <div id="landing-content-flex">
+            <div id="landing-content-text" class="verdana-font">
+                <p>
+                    Create your game faster.<br><br>
+                    Drag and drop to set up. Code optional.<br><br>
+                    Get Your characters moving how you want.
+                </p>
+            </div>
+            
+            <div id="landing-video">
+                <video controls>
+                    <source src="Media/2023-05-01 14-23-22.mp4" type="video/mp4">
+                  Your browser does not support the video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider"/>
+
+    <section id="about" class="verdana-font">
+        <h2 class="center-text">About This Pack</h2>
+        <div id="about-content-flex">
+            <div class="about-content-container about-font-1"><p>
+                This pack contains code I have developed to make setting up characters in a 2D game much easier.<br><br>
+                
+                I use this pack in my games to allow me to get straight to programming the other main gameplay elements and 
+                skip the long period of time it can take to create a good controller.<br><br>
+    
+                Not only does this pack come with pre-setup prefabs allowing you to skip coding but it also contains useful 
+                components and architecture that allow you to expand the controller, or even make your own using the components and states, 
+                to better fit your game.
+            </p></div>
+            <div class="about-content-container about-font-2"><p>
+                <b>This pack comes with:</b><br>
+                <ul class="space-list-items">
+                    <li>
+                        <b>Input readers</b><br><span class="light-text">(classes that read input from the player using Unity&apos;s old or new input system)</span>
+                    </li>
+                    <li>
+                        <b>Controllers</b><br><span class="light-text">(components that translate inputs to movement info but also allow for easy switching from an AI controller to a User controller during run time)</span>
+                    </li>
+                    <li>
+                        <b>Movement script</b><br><span class="light-text">(the main script that utilizes all the components and allow inputs to control the state of the entity)</span>
+                    </li>
+                    <li>
+                        <b>States</b><br><span class="light-text">(movement states that give your entity a wide array of movement options such as sliding or wall climbing. You can even create your own and add them to the movement script using the state base class and interface.)</span>
+                    </li>
+                    <li>
+                        <b>Collision detection</b><br><span class="light-text">(advanced collision detection class that easily let&apos;s you get important information about an entity such as the ground angle under them or if they are near a wall. Useful for any entity controller.)</span>
+                    </li>
+                    <li>
+                        <b>Animation script</b><br><span class="light-text">(a script that allows you full control over the animation played based on the movement information of an entity through the use of a scriptable object. No animator needed. Unity animator may still be used.)</span>
+                    </li>
+                    <li>
+                        <b>Pre-made prefabs</b><br><span class="light-text">(Already set up. Just drag them into your scene and customize their animations and movement stats to fit your game.)</span>
+                    </li>
+                    <li>
+                        <b>Debug visuals and readouts</b><br><span class="light-text">(Run into some unwanted behavior or a bug? Toggle on the various debug options made available through the scripts to see the raycasts and collision checks being made, or read out the entity's current movement state flags.)</span>
+                    </li>
+                </ul>
+            </p></div>
+        </div>
+
+    </section>
+
+    <hr class="divider"/>
+
+    <section id="technical">
+        <h2 class="center-text verdana-font">Technical Details</h2>
+
+        <div id="setup-window" class="hidden-window">
+            <div class="hidden-window-title-bar">
+                /Setup
+            </div>
+            <button type="button" class="fullscreen-hidden-window-button icon-button"><i class="fa-sharp fa-light fa-square"></i></button>
+
+            <div class="inner-hidden-window-full">
+                <div class="tutorial-text-wrapper">
+<pre class="verdana-font"><h2>Set Up</h2>
+Right out of the box you should have all that you need to get an entity moving around in just under a minute. All you need to do is create a game object, give it a sprite and animator, attach the EntityMovementScript, attach a controller, set up a few variables and you are done.
+
+<h3>Step 0:</h3> <h4>Project Settings > Physics 2D > Queries Start In Colliders = false</h4>
+This step is important to do before using the Entity Movement Script. Select Edit at the top of the screen, go to Project Settings, then Physics 2D. Here you will need to make sure the setting “Queries Start In Colliders” is disabled, the check box is not checked. This is due to the detection method of the scripts. 
+
+<h3>Step 1:</h3> <h4>Create object with a sprite, rigidbody and collider.</h4>
+Create the base. This is the object you will be using the controller on to move, you can skip this step if you have one already set up. If you don't already have a game object ready to do this you can right click in the “Hierarchy” window, usually found on the left side of the screen, then select “create empty”. This will give you your empty object.
+
+Next in the “inspector” window, found on the right, it will have your new object selected and showing all you have is a transform. Click “Add Component” under the transform and using the search bar search for a “Sprite Renderer” and add it. Do the same for “Animator”, “Capsule Collider 2D”, and “Rigidbody 2D”, as well.
+
+If you have not done so add a sprite to the sprite renderer so you can see your object. The Rigidbody2D BodyType should be set to Dynamic, Collision Detection set to Continuous, and Interpolate set to Interpolate. Under Constraints also freeze rotation. A Gravity Scale between 1 and 5 is recommended.
+
+<h3>Step 2:</h3> <h4>Add EntityMovementScript. Set "Ground Layers" and add states.</h4>
+Next add the “EntityMovementScript” from this package. It can be found in the “MonoBehaviors” file under “Movement”. Most variables will be preset with values I have used but they can all be changed or even set to be ignored. Some will need to be set before this can be used for the first time. Variables also have helpful Tooltips to explain what they do and what settings may do what actions. Just hover your mouse over the variable’s name to see the Tooltip.
+
+To ensure it works properly look for the “Ground Layers” variable in the inspector, select the drop down tab next to it, then select the layers you will be using for this entity to walk on. This will tell the script which colliders it can walk on.
+
+You will also need to select the states you will be using from the drop down tab found near the top of the component called “Add State”. This allows control over the states your entity can be in. Each state has its own variables and events for customization and control over movements.
+(Ai controllers will still work if the old input is disabled. This will only affect player inputs.)
+
+<h3>Step 3:</h3> <h4>Add a Controller or PlayerInput component.</h4>
+Attach a controller. This is a script that lets the EntityMovementScript know what inputs are being given and what actions to take. Two come ready with this package, one for player input and one as an example of a simple “ai” controller. Coding will be necessary for more controllers.
+
+To set up the player controller add the “PlayerControllerScript” found in the “MonoBehaviours” folder under “Controllers”. Then add a “ScriptableInputMap” to the player controller which outlines the actions of each input. One comes pre-made under the “Scriptables” folder found in the “Scripts” folder. One may also be made by right clicking in the “Project” window at the bottom, then selecting Create -> ScriptableObjects -> ScriptableInputMap.
+
+To use Unity's New input system instead make sure you have it added to your project, then instead of adding the controller script add the PlayerInput component added in from the input system. Then in the inspector of the PlayerInput component add the provided action map.
+
+<h3>Step 4:</h3> <h4>Handle animations.</h4>
+Lastly you will need to set up how your animations are handled. If this is done you may skip this step. To do this you must choose which method of animation you will be using, two ways are provided and ready to use. Both use an Animator, Animations, and an Animation Controller. Examples found in the “Animation” folder.
+
+To use the Animator method with animation transitions being controlled by the animator simply add the “AnimUpdater” script, found in the “MonoBehaviours” folder under “Animation”, to the entity. Make sure your entity has a Controller added to the Animator component with defined transitions and you are done.
+
+To use the script based way of playing animations add the “PlayerAnimationScript”, found in the “MonoBehaviours” folder under “Animation”, to the entity. This method uses a scriptable object to define the animations of the entity in each state, a pre-made one can be found in the “Scripts” folder under “Scriptables”. One can also be made by right clicking in the Project window at the bottom of the screen then navigating to Create -> ScriptableObjects -> ScriptableAnimationList. Fill the list with your animations and their respective states then add the scriptable list to the PlayerAnimationScript and you are done. This method was created to make any animation transition into any other animation with easier set up. 
+
+
+<h3>Notes:</h3>
+Gravity is often adjusted but while moving on the ground the gravity is determined from the Rigidbody2D’s gravity scale before play. Increasing this will make it easier for the entity to stick to the ground when moving quickly over sharp edges but increasing this too high may also affect movement across angled ground.
+
+When adjusting collider size, be sure to re adjust the size of the ground checks and their offsets so that horizontally they are within the collider and that vertically they are peaking out of the collider. They only need to be slightly out of the collider to work properly, however in some cases it may help to have the foot offset lowered out of the collider more to keep the entity grounded better but this may also interfere with other movements such as jumping if lowered too much. When adjusting these they may be seen in play mode by enabling gizmos during play.
+
+Some debug visuals are also provided without code changes under the “Debug Visuals” heading in the inspector for the Entity Movement Script. Log Flags will show in the console the different movement info that is being detected. Draw Movement Component Debug will show a line from the entity that represents the velocity of the entity which may be useful if the entity is getting stuck. Draw Collision Component Debug will display the three rays used for slope detection and ground info with blue being the ray in the front of the entity and red at the back. It is recommended that the ground check size of the feet stay between these rays.
+
+The movement script does support BoxCollider2D and CircleCollider2D but CapsuleCollider2D is recommended as that was used during most testing.
+
+When setting up animations, animations need to be in animation controller with the same name as the animation but do not need to be connected to anything if using PlayerAnimationScript. Connections are made in code.
+
+For easy use your animations should have the sprites centered to prevent X axis offsets of collider.
+
+CollisionCheckComponent can be used to get the position of entity since it calculates the position using collider offset and direction of entity. Also accounts for rotation.
+
+</pre>
+                </div>
+            </div>
+        </div>
+
+        <div id="tech-window" class="hidden-window">
+            <div class="hidden-window-title-bar">
+                /Documentation
+            </div>
+            <button type="button" class="fullscreen-hidden-window-button icon-button"><i class="fa-sharp fa-light fa-square"></i></button>
+            
+            <div id="tech-buttons" class="inner-hidden-window-left">
+                <p id="show-flowchart" class="selectable-text hidden-window-text verdana-font"><b>Flow Chart</b></p>
+                <p id="show-EntityMovementScript" class="selectable-text hidden-window-text verdana-font">EntityMovementScript</p>
+                <p id="show-StateManager" class="selectable-text hidden-window-text verdana-font">StateManager</p>
+                <br>
+                <p class="hidden-window-text verdana-font"><b>--Interfaces--</b></p>
+                <p id="show-ISimpleMove" class="selectable-text hidden-window-text verdana-font">ISimple Move</p>
+                <p id="show-IMove" class="selectable-text hidden-window-text verdana-font">IMove</p>
+                <p id="show-IEntityMovement" class="selectable-text hidden-window-text verdana-font">IEntity Movement</p>
+                <p id="show-IMoveStateManagerAccess" class="selectable-text hidden-window-text verdana-font">IMove StateManager Access</p>
+                <p id="show-IMoveStateFullAccess" class="selectable-text hidden-window-text verdana-font">IMoveState FullAccess</p>
+                <br>
+                <p class="hidden-window-text verdana-font"><b>--InfoStructs--</b></p>
+                <p id="show-MoveFlags" class="selectable-text hidden-window-text verdana-font">MoveFlags</p>
+                <p id="show-MovementInfo" class="selectable-text hidden-window-text verdana-font">MovementInfo</p>
+                <p id="show-MoveConstraintFlags" class="selectable-text hidden-window-text verdana-font">MoveConstraintFlags</p>
+                <p id="show-MovementConstraints" class="selectable-text hidden-window-text verdana-font">MovementConstraints</p>
+                <br>
+                <p class="hidden-window-text verdana-font"><b>--UtilityClasses--</b></p>
+                <p id="show-Controller" class="selectable-text hidden-window-text verdana-font">Controller</p>
+                <p id="show-InputHelperClass" class="selectable-text hidden-window-text verdana-font">InputHelperClass</p>
+                <p id="show-MoveComponent" class="selectable-text hidden-window-text verdana-font">MoveComponent</p>
+                <p id="show-CollisionCheckComponent" class="selectable-text hidden-window-text verdana-font">CollisionCheckComponent</p>
+                <br>
+                <p class="hidden-window-text verdana-font"><b>--States--</b></p>
+                <p id="show-MoveStateAbstract" class="selectable-text hidden-window-text verdana-font">MoveState Abstract</p>
+                <p id="show-Grounded" class="selectable-text hidden-window-text verdana-font">Grounded</p>
+                <p id="show-InAir" class="selectable-text hidden-window-text verdana-font">In Air</p>
+                <p id="show-OnWall" class="selectable-text hidden-window-text verdana-font">On Wall</p>
+            </div>
+
+            <div id="tech-view" class="inner-hidden-window-right">
+                
+                <span id="flow-chart" class="tech-view-element">
+                    <img src="Media/MovementDiagram.png" alt="" width="100%">
+                </span>
+
+                <span class="tech-view-element">
+                    <h2 class="verdana-font">EntityMovementScript</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        This script acts as the main container and driver of the movement systems.
+                         This class initializes the states specified for use from the AddStates variable, then adds them to a state manager.
+                         <br><br>
+                         <ul class="verdana-font">
+                            <li>Determines the active state of entity using a ground check and wall check</li>
+                            <li>Implements interfaces to allow external interactions with entity such as adding force or getting the entity&apos;s movement info.</li>
+                            <li>Implements interface to allow states to make changes to entity while having data persist across multiple states such as jump count and collider size changes.
+                                This is done through IEntityMovement and should Not be used by anything other than a state for data stability reasons as changes can be critical.</li>
+                            <li>Draws many debug visuals such as ground check area, wall check ray, and others.</li>
+                         </ul>
+                    </p>
+                </span>
+                <span class="tech-view-element">
+                    <h2 class="verdana-font">State Manager</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        This class is a container of states and is to be used by another class.
+                         This class contains methods to manage the active state out of a collection of multiple states.
+                        <br><br>
+                        States are updated within this class using the IMoveStateFullAccess interface.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">ISimple Move</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        This is used as a base interface for anything that will move and contains functions for getting and setting the velocity of an object as well as adding force. 
+                        <br><br>
+                        Think of this as being the interface to interact with a moveable ball.<br>
+                        The ball is just a ball and not controlled by a player. This interface can be added and implemented as a way for the player to hit the ball and add force to it by searching for this interface on the object.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">IMove</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        Inherits ISimpleMove interface.<br><br>
+
+                        Acts as a way to access the movement info of an object. This interface is meant to be used on objects that will have MovementInfo and MovementConstraints.
+                         Within EntityMovementScript this interface provides a way to access such classes.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">IEntity Movement</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        Inherits IMove interface.<br><br>
+
+                        Intended to only be explicitly implemented making it so that functions can not be accessed through a reference
+                         to the object but rather accessed through the interface itself. 
+                         This is done to maintain security of the functions as they are only meant to be used by states held within EntityMovementScript&apos;s StateManager.
+                        <br><br>
+
+                        GetTransformRef() is a function within the IEntityMovement interface. Accessing this function is done like so:
+                        <br><br>
+                    </p>
+
+<div class="code-block cool-border">EntityMovementScript player;
+IEntityMovement entityInterface = player;
+
+Transform transform = entityInterface.GetTransformRef();
+</div>
+                    <p class="tech-view-element-text verdana-font">
+                        <br>
+                        EntityMovementScript explicitly implements IEntityMovement. Access to the functions is done through the interface.
+                         Attempting to use GetTransformRef() or any other functions of IEntityMovement through player will not work.
+                        <br><br>
+
+                        The base MoveState already stores a reference to this interface of its parent in the variable m_parentInterface.
+                         Use this when adding a new state or adjusting a preexisting one.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">IMove StateManager Access</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        Allows limited access to an object&apos;s StateManager.
+                         Specifically this interface allows other objects to get access to the MoveState of an object that implements this interface.
+                        <br><br>
+
+                        This interface is used as a way to access and change the stats of EntityMovementScript&apos;s states.
+                         Below is an example of how to make a trigger that will set the player&apos;s run speed to 20.
+                        <br>
+                        (A similar script example can be found in the Entity Controller pack called ChangePlayerStatsTrigger within the Scripts folder.)
+                        <br><br>
+                    </p>
+
+<div class="code-block cool-border">void OnTriggerEnter2D(Collider2D col)
+{
+    if (col.gameObject.GetComponent&lt;IMoveStateManagerAccess&gt;() != null)
+    {
+        IMoveStateManagerAccess moveStateManager = col.gameObject.GetComponent&lt;IMoveStateManagerAccess&gt;();
+        GroundedState groundedState = moveStateManager.GetState("GroundedState") as GroundedState;
+        
+        if (groundedState != null)
+        {
+            groundedState.m_stats.runSpeed = 20f;
+        }
+    }
+}
+</div>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">IMoveState FullAccess</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        Like IEntityMovement this is an explicitly implemented interface.
+                         This interface is explicitly implemented on all concrete MoveStates (OnWall, GroundedState, …).
+                        <br><br>
+
+                        It is required that this interface be explicitly implemented on any new states added for the state to be used properly in StateManager.
+                        <br><br>
+
+                        The interface is designed to only be used by StateManager.
+                         The interface allows StateManager to access important functions within states in order to update them and transition states while making it so
+                          that an outside class can not accidentally call these functions on a state when gaining access to them through IMoveStateManagerAccess.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">MoveFlags</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        An enum in which each value is a flag allowing multiple values to be true or false at a time.
+                        <br>
+                        <a href="https://learn.microsoft.com/en-us/dotnet/api/system.flagsattribute?view=net-7.0" target="_blank">Microsoft flags documentation.</a>
+                        <br><br>
+
+                        These flags are used to describe the state of a moving entity such as if an entity is grounded and crouching.
+                         They are contained in the MovementInfo class These flags can be seen in the inspector during play if LogFlags is checked in the
+                         EntityMovementScript or if the Inspector is in Debug mode and the MoveInfo dropdown is expanded.
+                        <br><br>
+
+                        This class is largely used within each state, specifically the HandleInput functions.
+                         An example of use outside of EntityMovementScript can be seen in the PlayerAnimationScript as the script obtains the flags through MovementInfo and checks the flags to determine which animation to play.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">MoveConstraintFlags</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        An enum in which each value is a flag allowing multiple values to be true or false at a time.
+                        <br>
+                        <a href="https://learn.microsoft.com/en-us/dotnet/api/system.flagsattribute?view=net-7.0" target="_blank">Microsoft flags documentation.</a>
+                        <br><br>
+                        
+                        This set of flags is used within MoveStates to constrain or prevent a type of movement such as running or jumping and are contained in the MovementConstraints struct. 
+                        <br>
+                        It is up to the state to implement and check these flags
+
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">MovementConstraints</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        This struct contains MoveConstraintFlags and provides various bitwise functions to set and check the flags.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">MovementInfo</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        This class contains MoveStateFlags and provides various bitwise functions to set and check the flags.
+                         It also contains a few extra variables to further describe the state of an entity such as direction it is facing and directional input axis to describe movement direction.
+                        <br><br>
+
+                        This class is largely used within each state, specifically the HandleInput functions.
+                        <br>
+                        An example of use outside of EntityMovementScript can be seen in the PlayerAnimationScript as the script obtains the flags through MovementInfo and checks the flags to determine which animation to play.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">Controller</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        Abstract MonoBehaviour class used within states to retrieve input data.
+                        <br><br>
+
+                        On Awake EntityMovementScript finds the controller on the entity and passes it to each state as it initializes them.
+                         The states use the controller within the HandleInput function to read inputs and take action based on inputs and constraints.
+                        <br><br>
+
+                        Controllers can be found in the MonoBehaviors folder. A player controller and a simple AI controller can be found there.
+                        <br><br>
+
+                        PlayerControllerScript is a script that utilizes the InputContainer class to read inputs and store the data
+                         (type of input, if it is held down, if it is currently down, if it is new this frame, and if it is locked) within the container.
+                         The inputs are set through a scriptable object, ScriptableInputMap, that maps inputs to actions which are enum values that dictate how the input will be used elsewhere.
+                        <br><br>
+
+                        <b>Note</b> that the PlayerControllerScript is the implementation of Unity&apos;s old input system and will not be used if the new system is being used.
+                         Instead InputHelperClass will be used if an entity is to be controlled by PlayerInput.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">InputHelperClass</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        This class is used by states when a controller is not set and EntityMovementScript has detected a PlayerInput component (a component defined by Unity&apos;s new input system) on the entity.
+                        <br>
+                        <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/index.html" target="_blank">Unity documentation for input system.</a>
+                        <br><br>
+
+                        InputHelperClass utilizes the action map to read inputs and allows states to read the data of actions in their HandleInputWithInputHelper functions letting them use the new input system as a way to receive input.
+                        <br>
+                        This class also includes a function helpful for debugging that reads out the input and its state in the Inspector of EntityMovementScript in the Input Action Display text area during play.
+                        <br><br>
+
+                        This class is important for the use of the new input system paired with a state machine. By having the InputActionMap stored externally from the states and directly reading the inputs within the state this allows inputs to persist across state changes.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">MoveComponent </h2>
+                    <p class="tech-view-element-text verdana-font">
+                        This class contains simple functions for simple movement of a rigid body such as setting velocity,
+                         adding force, smoothly setting velocity with Vector3.SmoothDamp, as well as drawing a debug line that shows velocity.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">CollisionCheckComponent </h2>
+                    <p class="tech-view-element-text verdana-font">
+                        (“Ground” in this context is any Collider within specified layers to check. EX. a collider in a collision layer labeled “ground”)
+                        <br><br>
+                        Class in charge of various collision checks and data storing. Utilizes a mix of raycasts and overlap shapes for area checks.
+                        <br><br>
+                        Allows an object to obtain slope info about the ground below it, if it is on the ground, if there is ground above it, if the object is on a ledge, the RaycastHit2D information of the SlopeCheck rays, as well as other information useful for 2d movement.
+                        <br><br>
+                        This class also allows for the ability to ignore collision with specific objects and undoing the ignoring of said objects to allow for an object to pass through others under desired circumstances.
+                        <br><br>
+                        The class uses three rays for slope checking and three points for area checks (head, middle, feet).
+                        <br>
+                        There are also debug options that will draw these rays and the ground normal for error checking.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">MoveState Abstract</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        The abstract class of states that are stored and managed by StateManager within EntityMovementScript.
+                         EntityMovementScript uses StateManager to set the active state but EntityMovementScript holds the logic to change states based on movement info.
+                        <br><br>
+
+                        A state dictates the actions available to an entity in that moment based on input and movement info.
+                         States manipulate the position and movement info of an entity based on input, received from either a Controller or InputHelperClass,
+                         the entity&apos;s movement restrictions, and the current movement info (an entity can not run if it is not grounded).
+                        <br><br>
+
+                        States utilize an entity&apos;s MoveComponent as well as its CollisionCheckComponent to move the entity.
+                         A reference to the entity&apos;s EntityMovementScript through its IEntityMovement interface for extra functions that aid in moving the entity while having data persist across states.
+                        <br><br>
+                        
+                        Concrete States Must explicitly implement the IMoveStateFullAccess in order for StateManager to update them correctly.
+                        <br><br>
+
+                        Concrete states also implement their own stats classes since this data will be unique per type of state. The same goes for events contained within the states.
+                        <br><br>
+
+                        States include a name variable at base level that should be set to the actual name of the state class.
+                         This makes it clear which state is retrieved when checking an entity&apos;s state externally and wanting to change the state&apos;s stats since casting will be needed from the base class.
+                        <br>
+                        See IMoveStateManagerAccess for an example of using a states name or ChangePlayerStatsTrigger within the project.
+                         Name is used to retrieve the base of a specified class then cast to its actual concrete form.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">Grounded</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        This state is in charge of all actions an entity can take while on the “ground”, a collider in a specified layer.
+                        <br><br>
+
+                        This state used a number of variables to allow an entity to walk, run, dash, crouch, slide, and even jump
+                         (This jump however is only responsible for the first jump to get the entity off the ground.
+                         Following jumps will be handled by InAir state). All this while on a ground collider of any angle as long as the angle of the ground is less than the specified walkable slope.
+                         A slope too steep will cause the entity to slide off.
+                        <br><br>
+
+                        Primary movement is done through manipulation of an entity&apos;s friction, gravity, and velocity.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">In Air</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        This state is in charge of all actions an entity can take while not grounded such as aerial movement,
+                         jumping, ascending and descending speeds, and dashing in the air.
+                    </p>
+                </span>
+                <span id="" class="tech-view-element">
+                    <h2 class="verdana-font">On Wall</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        This state is in charge of all actions an entity can take while not grounded and near a wall such as sliding down a wall, wall jumps of various kinds, wall climbing, and wall grabbing.
+                    </p>
+                </span>
+                <!--<span id="" class="tech-view-element">
+                    <h2 class="verdana-font">ElementName</h2>
+                    <p class="tech-view-element-text verdana-font">
+                        innerText
+                    </p>
+                </span>-->
+            </div>
+        </div>
+
+        <div id="extra-window" class="hidden-window">
+            <div class="hidden-window-title-bar">
+                /ExtraInfo
+            </div>
+            <button type="button" class="fullscreen-hidden-window-button icon-button"><i class="fa-sharp fa-light fa-square"></i></button>
+
+            <div class="inner-hidden-window-full">
+                <div class="tutorial-text-wrapper">
+<pre class="verdana-font"><h2>Controllers And The Entity Movement Script:</h2>
+The relationship between these two scripts is simply that the controllers control the movement script. On its own the movement script will do nothing, it is made to take input from a controller and carry out actions based on the state it is in and the inputs given. Controllers are anything that inherits from the “ControllerBase” class found in the “DataContainers” folder under “Scripts”. Controllers are classes that put out inputs, or directions, for other classes to listen to. They may determine their directions from any source; AI decisions, simple if statements based on variables, or physical input from keys or buttons being pressed by a human.
+
+<h2>Animation And The Entity Movement Script</h2>
+Animation is independent from the Entity Movement Script, no changing of the movement script is needed for animation. The movement script uses an interface that other classes may reference to grab movement information from to determine outcomes. This can be seen in both animation scripts that come with this package found in the “MonoBehaviours” folder. This makes it easy to use the Movement script along with any animation method or even other scripts that may need to know about the entity’s movement.
+
+<h2>More About The Entity Movement Script</h2>
+The Entity Movement Script functions as a state machine. This means that based on the entity’s situation it will use a different state for actions it can take such as jumping and moving. States that come set up in this package are Grounded, In Air, and On Wall. More may be added in code for more situations or current states may be modified for greater movement capabilities.
+
+These states have their own stats and events that determine how the entity will behave. These stats and events can be customized in the inspector under drop down tabs with their respective names. The states an entity has access to is determined by the states added in the inspector when setting up. Not having a state included will limit movement capabilities which may be desired for some entities that have more basic movements.
+
+The events use Unity events for ease of set up without code but may be changed in code. Particle systems come with the package to demonstrate use of events. More events may also be added in code for greater customization.
+
+</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-buttongroup inset-box">
+        <a class="scroll-to-section button-color-blue" href="https://assetstore.unity.com/packages/tools/game-toolkits/entitycontroller2d-234231" target="_blank">Get Now</a>
+        <a class="scroll-to-section" href="#landing">Top</a>
+        <a class="scroll-to-section" href="#about">About</a>
+        <a class="scroll-to-section" href="https://pantheraonline.itch.io/entity-controller-demo" target="_blank">Demo</a>
+        <a class="scroll-to-section button-color-purple" href="https://pantheradigital.github.io/" target="_blank">Panthera</a>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
