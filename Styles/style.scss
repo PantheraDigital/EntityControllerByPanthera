@@ -184,6 +184,22 @@ h1 {
     font-size: 0.5rem;
   }
 }
+@media screen and (max-width: 420px) {
+  .header-buttongroup, .footer-buttongroup {
+    position: relative;
+    width:280px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .button-color-blue{
+    order: 2;
+  }
+  .button-color-purple{
+    order: 3;
+  }
+}
+
 .button-color-blue {
   background-color: skyblue !important;
   outline-color: lightskyblue !important;
