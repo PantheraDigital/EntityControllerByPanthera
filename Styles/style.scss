@@ -280,6 +280,12 @@ video {
     height: 240px;
   }
 }
+@media screen and (max-width: 440px) {
+    #landing-video {
+      height: 120px;
+    }
+  }
+
 #about-content-flex {
   display: flex;
   justify-content: space-evenly;
