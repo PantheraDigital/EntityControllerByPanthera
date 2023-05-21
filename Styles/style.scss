@@ -19,13 +19,22 @@ button > i {
 }
 
 .selectable-text {
+  --x: 0%;
   cursor: pointer;
   text-decoration: underline;
+  background-image: linear-gradient(90deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 60%);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
 }
 
 .selectable-text:hover {
-  color: #666666;
-  background-color: rgba(255, 255, 255, 0.4);
+  color:darkmagenta;
+  background-size: 100% 100%;
+}
+.selectable-text:active {
+  color:black;
+  background-size: 100% 100%;
 }
 
 .icon-button {
@@ -238,7 +247,7 @@ h1 {
 }
 
 #landing-tagline {
-  margin: 2ch 0 4ch 0;
+  margin: 2ch 15px 4ch 15px;
   font-size: xx-large;
 }
 
@@ -248,9 +257,24 @@ h1 {
   align-items: center;
 }
 
-#landing-content-text {
+#landing-content-text-container {
   margin-left: 4ch;
   margin-right: 2ch;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid black 1px;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 10px;
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image:linear-gradient(170deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 30%, rgba(255,255,255,0.9) 33%, rgba(255,255,255,0.9) 36%, rgba(0,0,0,0) 39%, rgba(0,0,0,0) 100%);
+}
+
+#landing-content-text{
+  margin-left: 1ch;
+  margin-right: 1ch;
   font-size: xx-large;
   line-height: 1.5;
 }
@@ -267,7 +291,7 @@ h1 {
 video {
   height: 100%;
   width: auto;
-  box-shadow: 1px 1px 20px black;
+  box-shadow: 2px 2px 20px black;
 }
 
 @media screen and (max-width: 1535px) {
@@ -280,8 +304,10 @@ video {
     font-size: x-large;
     margin-bottom: 2ch;
   }
-  #landing-content-text {
-    margin: 0 0 2ch 0;
+  #landing-content-text-container {
+    margin: 0 1ch 2ch 1ch;
+  }
+  #landing-content-text{
     font-size: x-large;
     text-align: center;
   }
