@@ -465,11 +465,21 @@ video {
   transition: 0.4s;
 }
 
-.fullscreen-hidden-window-button:hover {
-  color: cyan;
-  text-shadow: 0 0 4px cyan;
-  background-color: rgb(43, 43, 43);
-  border-color: rgb(43, 43, 43);
+@media (hover: hover) and (pointer: fine) {
+  .fullscreen-hidden-window-button:hover {
+    color: cyan;
+    text-shadow: 0 0 4px cyan;
+    background-color: rgb(43, 43, 43);
+    border-color: rgb(43, 43, 43);
+  }
+}
+@media not (hover: hover) and (pointer: fine) {
+  .fullscreen-hidden-window-button:active {
+    color: cyan;
+    text-shadow: 0 0 4px cyan;
+    background-color: rgb(43, 43, 43);
+    border-color: rgb(43, 43, 43);
+  }
 }
 
 .fullscreen-hidden-window-button > i {
