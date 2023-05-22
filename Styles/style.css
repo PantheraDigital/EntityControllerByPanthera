@@ -53,6 +53,26 @@ hr.divider {
   width: 70%;
 }
 
+.divider {
+  height: 10vh;
+  box-shadow: inset 0 0 10px black;
+  border: inset 5px lightgrey;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url(../Media/CodeBackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.divider::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: 10vh;
+  backdrop-filter: blur(3px);
+}
+
 .verdana-font {
   font-family: Verdana, sans-serif !important;
 }
@@ -87,10 +107,9 @@ hr.divider {
 }
 #landing, #about, #technical {
   height: fit-content;
-  min-height: 100vh;
+  min-height: 100%;
   max-height: max-content;
   width: 100%;
-  margin-bottom: 2ch;
 }
 
 #technical {
