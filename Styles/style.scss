@@ -27,10 +27,11 @@ button > i {
   background-repeat: no-repeat;
   transition: background 0.5s;
 }
-
-.selectable-text:hover {
-  color:darkmagenta;
-  background-size: 100% 100%;
+@media (hover: hover) and (pointer: fine) {
+  .selectable-text:hover {
+    color:darkmagenta;
+    background-size: 100% 100%;
+  }
 }
 .selectable-text:active {
   color:black;
@@ -184,10 +185,17 @@ h1 {
   text-decoration: none;
   outline: outset 3px lightgray;
 }
-
-.scroll-to-section:hover {
-  background-color: lightgray;
-  outline: inset 3px lightgray;
+@media (hover: hover) and (pointer: fine) {
+  .scroll-to-section:hover {
+    background-color: lightgray;
+    outline: inset 3px lightgray;
+  }
+}
+@media not all and (hover: hover) and (pointer: fine) {
+  .scroll-to-section:active {
+    background-color: lightgray;
+    outline: inset 3px lightgray;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -236,14 +244,6 @@ h1 {
   transition: 0.3s;
 }
 
-.button-color-blue:hover, .button-color-blue:active {
-  background-color: steelblue !important;
-  outline-color: skyblue !important;
-  color: cyan !important;
-  /*box-shadow: 0 0 10px 3px lightgreen !important;*/
-  text-shadow: 1px 1px 5px cyan;
-}
-
 .button-color-purple {
   background-color: mediumpurple !important;
   outline-color: rgb(157, 115, 241) !important;
@@ -253,12 +253,39 @@ h1 {
   transition: 0.3s;
 }
 
-.button-color-purple:hover, .button-color-purple:active {
-  background-color: rebeccapurple !important;
-  outline-color: rgb(157, 115, 241) !important;
-  color: violet !important;
-  /*box-shadow: 0 0 10px 3px lightgreen !important;*/
-  text-shadow: 1px 1px 5px magenta;
+@media (hover: hover) and (pointer: fine) {
+  .button-color-blue:hover, .button-color-blue:active {
+    background-color: steelblue !important;
+    outline-color: skyblue !important;
+    color: cyan !important;
+    /*box-shadow: 0 0 10px 3px lightgreen !important;*/
+    text-shadow: 1px 1px 5px cyan;
+  }
+
+  .button-color-purple:hover, .button-color-purple:active {
+    background-color: rebeccapurple !important;
+    outline-color: rgb(157, 115, 241) !important;
+    color: violet !important;
+    /*box-shadow: 0 0 10px 3px lightgreen !important;*/
+    text-shadow: 1px 1px 5px magenta;
+  }
+}
+@media not all and (hover: hover) and (pointer: fine) {
+  .button-color-blue:active {
+    background-color: steelblue !important;
+    outline-color: skyblue !important;
+    color: cyan !important;
+    /*box-shadow: 0 0 10px 3px lightgreen !important;*/
+    text-shadow: 1px 1px 5px cyan;
+  }
+
+  .button-color-purple:active {
+    background-color: rebeccapurple !important;
+    outline-color: rgb(157, 115, 241) !important;
+    color: violet !important;
+    /*box-shadow: 0 0 10px 3px lightgreen !important;*/
+    text-shadow: 1px 1px 5px magenta;
+  }
 }
 
 #landing-tagline {
@@ -437,13 +464,6 @@ video {
   transition: 0.4s;
 }
 
-.center-hidden-window-button:hover {
-  color: cyan;
-  text-shadow: 0 0 4px cyan;
-  background-color: rgb(43, 43, 43);
-  border-color: rgb(43, 43, 43);
-}
-
 .fullscreen-hidden-window-button {
   position: absolute;
   box-sizing: border-box;
@@ -459,6 +479,13 @@ video {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .center-hidden-window-button:hover {
+    color: cyan;
+    text-shadow: 0 0 4px cyan;
+    background-color: rgb(43, 43, 43);
+    border-color: rgb(43, 43, 43);
+  }
+
   .fullscreen-hidden-window-button:hover {
     color: cyan;
     text-shadow: 0 0 4px cyan;
@@ -467,6 +494,13 @@ video {
   }
 }
 @media not all and (hover: hover) and (pointer: fine) {
+  .center-hidden-window-button:active {
+    color: cyan;
+    text-shadow: 0 0 4px cyan;
+    background-color: rgb(43, 43, 43);
+    border-color: rgb(43, 43, 43);
+  }
+
   .fullscreen-hidden-window-button:active {
     color: cyan;
     text-shadow: 0 0 4px cyan;
